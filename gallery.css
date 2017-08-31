@@ -1,0 +1,262 @@
+/* SHARED */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  font-size: 450%;
+}
+
+h2 {
+  font-size: 250%;
+}
+
+h3 {
+  font-size: 175%;
+}
+
+h4 {
+  font-size: 150%;
+}
+
+h5 {
+	font-size: 125%;
+}
+
+p {
+	line-height: 1.75;
+}
+
+span {
+	font-size: inherit;
+}
+
+.container {
+  padding: 20px;
+  padding-bottom: 300px;
+}
+
+.clear {
+	clear: both;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* COLUMNS */
+
+.column-info {
+	width: 20%;
+	float: left;
+}
+
+.content-container {
+	float: left;
+	width: 80%;
+}
+
+.column-content {
+	width: 33%;
+	float: left;
+	padding: 0 6px;
+}
+
+.column-content img {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (min-width: 700px) and (max-width: 899px) {
+	.column-content {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 699px) {
+	.column-content {
+		width: 100%;
+	}
+}
+
+.item {
+	width: 100%;
+	height: auto;
+	margin: 6px 0;
+}
+
+.item1 {
+	width: 100%;
+	height: 100px;
+	background-color: #ccc;
+	margin: 6px 0;
+}
+
+.item2 {
+	width: 100%;
+	height: 200px;
+	background-color: #ccc;
+	margin: 6px 0;
+}
+
+.item3 {
+	width: 100%;
+	height: 300px;
+	background-color: #ccc;
+	margin: 6px 0;
+}
+
+.item4 {
+	width: 100%;
+	height: 400px;
+	background-color: #ccc;
+	margin: 6px 0;
+}
+
+.item5 {
+	width: 100%;
+	height: 500px;
+	background-color: #ccc;
+	margin: 6px 0;
+}
+
+/* ROWS */
+
+.row-info {
+	padding: 20px 0;
+}
+
+.info-item {
+	float: left;
+	height: 100%;
+}
+
+.info-item:first-child {
+	padding-right: 30px;
+}
+
+/* row item width will be auto */
+.rowitem {
+	/* width: 100px; */
+	height: 400px;
+	background-color: #ccc;
+	display: inline-block;
+	margin: 6px 0;
+}
+
+.rowitem img {
+	height: 100%;
+	width: auto;
+}
+
+.rowitem1 {
+	width: 100px;
+	height: 400px;
+	background-color: #ccc;
+	display: inline-block;
+}
+
+.rowitem2 {
+	width: 200px;
+	height: 400px;
+	background-color: #ccc;
+	display: inline-block;
+}
+
+.rowitem3 {
+	width: 300px;
+	height: 400px;
+	background-color: #ccc;
+	display: inline-block;
+}
+
+.rowitem4 {
+	width: 400px;
+	height: 400px;
+	background-color: #ccc;
+	display: inline-block;
+}
+
+.rowitem5 {
+	width: 500px;
+	height: 400px;
+	background-color: #ccc;
+	display: inline-block;
+}
+
+/* ROWS AND COLUMNS */
+
+.full-content-container {
+	width: 100%;
+}
+
+/* EXPERIMENTAL HOVER EFFECTS */
+
+.hover1 img {
+	filter: none;
+	transition: all 2s ease;
+}
+.hover1 img:hover {
+	filter: grayscale(1);
+}
+
+.hover2 img {
+	filter: none;
+	transition: all 2s ease;
+}
+.hover2 img:hover {
+	filter: saturate(5);
+}
+
+.hover3 img {
+	filter: none;
+	transition: all 2s ease;
+}
+.hover3 img:hover {
+	filter: hue-rotate(90deg);
+}
+
+.hover4 img {
+	filter: none;
+	transition: all 2s ease;
+}
+.hover4 img:hover {
+	filter: blur(3px);
+}
+
+.hover5 {
+	overflow: hidden;
+}
+.hover5 img {
+	transition: all 2s ease;
+}
+.hover5 img:hover {
+	transform: scale(1.2);
+}
+
+.hover6 img {
+	filter: none;
+	transition: all 2s ease;
+}
+.hover6 img:hover {
+	filter: saturate(5);
+}
+
+.hover7 img {
+	filter: none;
+	transition: all 2s ease;
+}
+.hover7 img:hover {
+	filter: hue-rotate(90deg);
+}
+
+
+
