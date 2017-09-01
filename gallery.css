@@ -200,6 +200,10 @@ span {
 
 /* EXPERIMENTAL HOVER EFFECTS */
 
+.full-content-container .item:hover {
+	cursor: pointer;
+}
+
 .hover1 img {
 	filter: none;
 	transition: all 2s ease;
@@ -242,12 +246,15 @@ span {
 	transform: scale(1.2);
 }
 
+.hover6 {
+	overflow:hidden;
+}
 .hover6 img {
-	filter: none;
+	transform: scale(1.2);
 	transition: all 2s ease;
 }
 .hover6 img:hover {
-	filter: saturate(5);
+	transform: scale(1);
 }
 
 .hover7 img {
@@ -256,6 +263,200 @@ span {
 }
 .hover7 img:hover {
 	filter: hue-rotate(90deg);
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+}
+
+.hover8 {
+	position: relative;
+}
+
+.mask h4 {
+	padding-top: 50px;
+}
+
+.hover8:hover .mask {
+	opacity: 1;
+}
+
+.hover8:hover h4, .hover8:hover p {
+	opacity: 1;
+	color: #fff;
+}
+
+.mask2 {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color: #fff;
+	background-color: rgba(60, 1, 137, 0.5);
+	opacity: 0;
+	position: absolute;
+	text-align: center;
+}
+
+.hover9 {
+	position: relative;
+}
+
+.mask2 h4 {
+	margin-top: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgba(0, 0, 0, 0.8);
+	transform: rotateX(90deg);
+	transition: transform 0.5s linear;
+}
+
+.hover9:hover .mask2 {
+	opacity: 1;
+}
+
+.hover9:hover h4 {
+	transform: rotateX(0deg);
+}
+
+.hover9:hover h4, .hover9:hover p {
+	opacity: 1;
+	color: #fff;
+}
+
+.hover10 {
+	position: relative;
+	overflow: hidden;
+}
+
+.hover10 .mask {
+	background-color: rgba(146,96,91,0.8);
+	opacity:0;
+	transition: all 0.3s ease-in 0.4s;
+}
+
+.hover10 h4 {
+	opacity:0;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: scale(10);
+    transition: all 0.3s ease-in-out 0.1s;
+	color: #fff;
+}
+
+.hover10 p {
+	opacity:0;
+    transform: scale(10);
+	transition: all 0.3s ease-in-out 0.2s;
+	color: #fff;
+}
+
+.hover10:hover .mask {
+	opacity: 1;
+	transition-delay: 0s;
+}
+
+.hover10:hover h4 {
+	opacity: 1;
+	transform: scale(1);
+	transition-delay: 0.1s;
+}
+
+.hover10:hover p {
+	opacity: 1;
+	transform: scale(1);
+	transition-delay: 0.2s;
+}
+
+.hover11 {
+	position: relative;
+	overflow: hidden;
+}
+
+.hover11 .mask {
+	background-color: rgba(115,146,184, 0.8);
+	opacity: 0;
+	transform: translate(265px, 145px) rotate(45deg);
+	transition: all 0.2s ease-in-out;
+}
+
+.hover11 h4 {
+	border-bottom: 1px solid #fff;
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: translate(200px, -200px);
+	transition: all 0.2s ease-in-out;
+	color: #fff;
+}
+
+.hover11 p {
+	transform: translate(-500px, 200px);
+	transition: all 0.2s ease-in-out;
+	color: #fff;
+}
+
+.hover11:hover .mask {
+	opacity:1; 
+	transform: translate(0px, 0px) rotate(0deg);
+}
+
+.hover11:hover h4 {
+	transform: translate(0px,0px);
+	transition-delay: 0.1s; 
+}
+
+.hover11:hover p {
+	transform: translate(0px,0px); 
+	transition-delay: 0.2s;
+}
+	
+.hover12 {
+	position: relative;
+	overflow: hidden;
+}
+
+.hover12 .mask {
+	background-color: rgba(255, 255, 255, 0.7);
+	top: -400px;
+	opacity: 0;
+	transition: all 0.3s ease-out 0.5s;
+}
+
+.hover12 h4 {
+	transform: translateY(-200px);
+	transition: all 0.2s ease-in-out 0.1s;
+}
+
+.hover12 p {
+	color: #333;
+    transform: translateY(-200px);
+	transition: all 0.2s ease-in-out 0.2s;
+}
+
+.hover12:hover .mask {
+	opacity: 1; 
+	top: 0px; 
+	transition-delay: 0s; 
+    animation: bounceY 0.9s linear;
+}
+
+.hover12:hover h4 {
+	transform: translateY(0px);
+	transition-delay: 0.4s;
+}
+
+.hover12:hover p {
+	transform: translateY(0px);
+	transition-delay: 0.2s;
 }
 
 
